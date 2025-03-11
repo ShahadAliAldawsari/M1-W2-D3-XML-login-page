@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/email"
+        android:tint = "#FCFCFC"
+        android:width="21dp"
+        android:height="23dp"
+
+        />
+    <!--        android:gravity="center"-->
+</layer-list>

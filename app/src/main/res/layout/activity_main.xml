@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1D1D1D"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="240dp"
+            android:textAlignment="center"
+            >
+
+            <!--Google Sign In Button-->
+            <Button
+                android:id="@+id/google_button"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FFFEFE"
+                android:bottomRightRadius="50dp"
+                android:drawableStart="@drawable/google_icon"
+                android:paddingStart="16dp"
+                android:paddingLeft="16dp"
+                android:text="Sign In With Your Google Accont"
+                android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="22dp"
+                />
+
+            <!--Email Field-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner"
+                android:drawableStart="@drawable/email_"
+                android:backgroundTint="#A8A8A8"
+                android:padding="16dp"
+                android:layout_marginBottom="22dp"
+                />
+
+            <!--Password-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner"
+                android:drawableStart="@drawable/lock_"
+                android:drawableEnd="@drawable/eye_"
+                android:backgroundTint="#A8A8A8"
+                android:padding="16dp"
+                android:layout_marginBottom="22dp"
+                />
+
+            <!--Log in Button-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#69BE44"
+                android:padding="18dp"
+                android:text="LOGIN"
+                android:layout_marginBottom="22dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+
+            <!--Forgot Password-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Forgot Password"
+                android:textSize="16sp"
+                android:textColor="#537893"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <!--Sign Up-->
+            
+
+            <!--Skip-->
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+<!--    &lt;!&ndash;    android:src="@drawable/google_icon"&ndash;&gt;-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/s123"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello"-->
+    <!--        android:textSize="46.sp"-->
+    <!--        android:textColor="#FFAFCAFC"-->
+    <!--        android:textAlignment="textEnd"-->
+    <!--        android:layout_weight="30"-->
+    <!--        android:maxLines="1"-->
+    <!--        android:ellipsize="marquee"-->
+
+
+    <!--        android:layout_alignStat="@id/s456"-->
+    <!--        android:layout_marginTop="64.dp"-->
+    <!--        />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/s456"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Shahad"-->
+    <!--        android:textSize="30.sp"-->
+    <!--        android:textColor="#870279"-->
+    <!--        android:textAlignment="textEnd"-->
+    <!--        android:textStyle = "italic"-->
+    <!--        />-->
+
+</LinearLayout>
