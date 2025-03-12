@@ -16,6 +16,17 @@ import com.example.m1w2d3.ui.theme.M1W2D3Theme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+//        //I have to uncommint the line to see the run (only one at a time)
+
+//        //1- Linear layout
+//        setContentView(R.layout.activity_main)
+
+//        //2- Relative layout
+        setContentView(R.layout.relativelayout)
+
+//        //3- Constraint layout
+//        setContentView(R.layout.constraintlayout)
+
     }
 }

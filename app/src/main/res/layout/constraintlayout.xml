@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:textAlignment="center"
     android:weightSum="100"
     >
 
@@ -14,22 +13,23 @@
         android:textAlignment="center"
         >
 
-        <LinearLayout
+        <ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#1D1D1D"
             android:orientation="vertical"
+            android:paddingRight="20dp"
             android:paddingLeft="20dp"
             android:paddingTop="240dp"
-            android:paddingRight="20dp"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            >
 
             <!--Google Sign In Button-->
             <Button
                 android:id="@+id/google_button"
+                android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:layout_marginBottom="22dp"
                 android:background="@drawable/rounded_corner"
                 android:backgroundTint="#FFFEFE"
                 android:bottomRightRadius="50dp"
@@ -37,99 +37,119 @@
                 android:paddingStart="16dp"
                 android:paddingLeft="16dp"
                 android:text="Sign In With Your Google Accont"
-                android:textAlignment="textStart"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
                 android:textSize="17sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginBottom="22dp"
+                />
 
             <!--Email Field-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginBottom="22dp"
                 android:background="@drawable/rounded_corner"
-                android:backgroundTint="#A8A8A8"
                 android:drawableStart="@drawable/email_"
-                android:padding="16dp" />
+                android:backgroundTint="#A8A8A8"
+                android:padding="16dp"
+                android:layout_marginBottom="22dp"
+                />
 
             <!--Password-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginBottom="22dp"
                 android:background="@drawable/rounded_corner"
-                android:backgroundTint="#A8A8A8"
                 android:drawableStart="@drawable/lock_"
                 android:drawableEnd="@drawable/eye_"
-                android:padding="16dp" />
+                android:backgroundTint="#A8A8A8"
+                android:padding="16dp"
+                android:layout_marginBottom="22dp"
+                />
 
             <!--Log in Button-->
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginBottom="22dp"
                 android:background="@drawable/rounded_corner"
                 android:backgroundTint="#69BE44"
                 android:padding="18dp"
                 android:text="LOGIN"
+                android:layout_marginBottom="22dp"
+                android:textStyle="bold"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                />
 
             <!--or Forget Password-->
             <TextView
                 android:id="@+id/t1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent"
                 android:text="@string/password"
-                android:textAlignment="center"
-                android:textColor="#9C9C9C"
                 android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
+                android:textColor="#9C9C9C"
+                android:textStyle="bold"
                 android:textAlignment="center"
-                >
+                />
 
-                <!--don't have an account yet?-->
-                <TextView
-                    android:id="@+id/t2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:text="don't have an account yet? "
-                    android:textColor="#A8A8A8"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <!--Sign Up-->
-                <TextView
-                    android:id="@+id/t3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:text="Sign Up"
-                    android:textColor="#507BAA"
-                    android:textSize="22sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+            <!--don't have an account yet? Sign Up-->
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#9C9C9C"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
 
             <!--Skip-->
             <TextView
-                android:id="@+id/t4"
+                android:id="@+id/t3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
+                android:layout_height="match_parent"
                 android:text="Skip"
-                android:textAlignment="center"
-                android:textColor="#A8A8A8"
                 android:textSize="22sp"
+                android:textColor="#9C9C9C"
+                android:textStyle="bold"
+                android:textAlignment="center"
                 />
 
-        </LinearLayout>
+        </ConstraintLayout>
     </FrameLayout>
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+    <!--    &lt;!&ndash;    android:src="@drawable/google_icon"&ndash;&gt;-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/s123"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello"-->
+    <!--        android:textSize="46.sp"-->
+    <!--        android:textColor="#FFAFCAFC"-->
+    <!--        android:textAlignment="textEnd"-->
+    <!--        android:layout_weight="30"-->
+    <!--        android:maxLines="1"-->
+    <!--        android:ellipsize="marquee"-->
+
+
+    <!--        android:layout_alignStat="@id/s456"-->
+    <!--        android:layout_marginTop="64.dp"-->
+    <!--        />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/s456"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Shahad"-->
+    <!--        android:textSize="30.sp"-->
+    <!--        android:textColor="#870279"-->
+    <!--        android:textAlignment="textEnd"-->
+    <!--        android:textStyle = "italic"-->
+    <!--        />-->
 
 </LinearLayout>

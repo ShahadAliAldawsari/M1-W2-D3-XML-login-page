@@ -1,3 +1,12 @@
 <resources>
+
     <string name="app_name">M1 W2 D3</string>
+
+    <string name="password">or <font color="#507BAA">Forget Password</font></string>
+
+<!--    <string name="signup">don\'t have an account yet? <font color="#507BAA">Sign Up</font></string>-->
+
+
+    <string name="skip">Skip</string>
+
 </resources>
